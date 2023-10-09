@@ -1,0 +1,54 @@
+#nav {
+    display:flex;
+    justify-content: space-evenly;
+    font-weight:bold;
+    padding-top:15px;
+}
+
+
+#about{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+}
+#aboutImgContainer{
+    width:100%;
+    height:100%;
+    background-color:gray;
+}
+
+#skills{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+
+#projects{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.projectPreview{
+    height:150px;
+    width:150px;
+    background-color: grey;
+    border:2px solid black;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:5px;
+}
+
+h1{
+    font-size: 1.5em;
+}
+body{
+    background-color:beige;
+}
+#pageWrap{
+    margin:auto;
+    width:95%;
+    max-width:1280px;
+    background-color:antiquewhite;
+    border-radius:6px;
+}
