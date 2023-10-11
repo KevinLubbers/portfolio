@@ -83,6 +83,14 @@ h1{
     font-size: 1.5em;
     padding-left:5px;
 }
+#aboutContent h1{
+    font-size:1.25em;
+    padding-left:0px;
+    font-weight: normal;
+    text-decoration: underline;
+    font-family:monospace;
+}
+
 body{
     background-image:url("imgs/nature.jpg");
     background-repeat:no-repeat;
