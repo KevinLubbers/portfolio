@@ -1,3 +1,6 @@
+body.dark{
+    color:white;
+}
 #nav {
     display:flex;
     justify-content: space-between;
@@ -11,9 +14,36 @@
 #navName{
     font-size:1.75em;
 }
-#navUI{
-    height:50px;
-    width:50px;
+#navUIMenu{
+    height:40px;
+    width:40px;
+    scale:.75;
+}
+#navUIMenu:hover{
+    cursor:pointer;
+}
+#navUIDark{
+    height:40px;
+    width:40px;
+    scale:.75;
+}
+#navUIDark:hover{
+    cursor:pointer;
+}
+#dropdownContent{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    cursor: pointer;
+    text-align: center;
+}
+
+#dropdownContent div:hover{
+    background-color: #cb9595;
 }
 
 

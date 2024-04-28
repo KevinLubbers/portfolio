@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css.css" defer>
+        <link rel="stylesheet" type="text/css" href="css.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta
             name="description"
@@ -16,16 +16,20 @@
             <nav id="nav">
                 
                 <div id="navName">Kevin Lubbers</div>
-                <img src="imgs/menu.png" id="navUI" alt="Mobile Navigation Menu"> 
+                <div>
+                    <img src="imgs/sun.png" id="navUIDark" alt="Toggle Dark Mode" onclick="toggleDarkMode();"> 
+                    <img src="imgs/translate-day.png" id="navUIMenu" alt="Translate Menu"> 
+                </div>
                 
-               <!-- <div class="navBlock">Home</div>
-                <div class="navBlock">About Me</div>
-                <div class="navBlock">Skills</div>
-                <div class="navBlock">Projects</div>
-                <div class="navBlock">GitHub</div>
-                <div class="navBlock">Resume</div> -->
             </nav>
-
+            <div class="dropdown-content" id="dropdownContent">
+                <div>English(US)🇺🇸</div>
+                <div>German🇩🇪</div>
+                <div>Korean🇰🇷</div>
+                <div>Bengali🇧🇩</div>
+                <div>Danish🇩🇰</div>
+            </div>
+                
             <section>
                 <h1>About Me:</h1>
                 <div id="about">
@@ -130,3 +134,4 @@
         </div>
     </body>
 </html>
+<script src="js.js"></script>
