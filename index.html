@@ -12,6 +12,7 @@
         <title>Kevin Lubbers - Full Stack Web Developer Portfolio</title>
     </head>
     <body>
+        
         <div id="pageWrap">
             <nav id="nav">
                 
@@ -23,11 +24,11 @@
                 
             </nav>
             <div class="dropdown-content" id="dropdownContent">
-                <div>English(US)🇺🇸</div>
-                <div>German🇩🇪</div>
-                <div>Korean🇰🇷</div>
-                <div>Bengali🇧🇩</div>
-                <div>Danish🇩🇰</div>
+                <div>🇺🇸 English(US)</div>
+                <div>🇩🇪 German</div>
+                <div>🇰🇷 Korean</div>
+                <div>🇧🇩 Bengali</div>
+                <div>🇩🇰 Danish</div>
             </div>
                 
             <section>
@@ -124,10 +125,14 @@
             </section>
 
             <hr>
-            <section id="resume">
+            <section>
                 <h1>Resume:</h1>
-                <div>This is my resume</div>
+                <div id="resume">
+                    <div style="cursor: pointer;" onclick="document.getElementById('resumeFrame').style.display === 'block' ? document.getElementById('resumeFrame').style.display = 'none' : document.getElementById('resumeFrame').style.display = 'block'">View Resume</div>
+                    <div><a href="resume.txt" download="resume.txt">Download Resume</a></div>
+                    <iframe style="display:none;" id="resumeFrame" src="resume.txt" width="100%" height="600px"></iframe>
 
+                </div>
             </section>
             <hr>
             

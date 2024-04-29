@@ -14,7 +14,7 @@ function toggleDarkMode(){
     
     let tagNames = ['body','div', 'nav', 'article', 'p', 'aside',
     'ul', 'li', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'figure',
-    'figcaption', 'section'];
+    'figcaption', 'section', 'hr', 'a'];
     
     // Function to add the "dark" class to elements by tag names
     function addDarkClassByTagNames(tagNames) {
