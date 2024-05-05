@@ -22,9 +22,9 @@ function toggleDarkMode(){
     }
     
     //loop through all listed tags and add dark class to each element
-    let tagNames = ['body','div', 'nav', 'article', 'p', 'aside',
-    'ul', 'li', 'h1', 'h2', 'h3', 'figure',
-    'figcaption', 'section', 'hr', 'a'];
+    let tagNames = ['body','div','section', 'h1', 'h2', 'nav', 'article', 'p', 'aside',
+    'ul', 'li', 'h3', 'figure',
+    'figcaption', 'hr', 'a'];
     function addDarkClassByTagNames(tagNames) {
         tagNames.forEach(tagName => {
             var elements = document.getElementsByTagName(tagName);
