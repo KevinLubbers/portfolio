@@ -1,5 +1,6 @@
 * {
-    transition: all .2s ease;
+    transition: background .5s ease;
+    transition: color .5s ease;
 }
 #nav {
     display:flex;
