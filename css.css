@@ -1,3 +1,6 @@
+* {
+    transition: all 1s ease;
+}
 #nav {
     display:flex;
     justify-content: space-between;
@@ -8,13 +11,18 @@
     padding:20px;
     box-shadow: 1px 5px 5px #888888;
 }
+#nav.dark{
+    background-color: #0F1F3D;
+}
 #navName{
     font-size:1.75em;
+    flex:50%;
 }
 #navUIMenu{
     height:40px;
     width:40px;
     scale:.75;
+    flex:25%;
 }
 #navUIMenu:hover{
     cursor:pointer;
@@ -23,6 +31,7 @@
     height:40px;
     width:40px;
     scale:.75;
+    flex:25%;
 }
 #navUIDark:hover{
     cursor:pointer;
@@ -127,7 +136,7 @@
     padding:5px;
 }
 #resumeFrame{
-    
+    background-color: white;
 }
 
 
@@ -168,7 +177,7 @@ section{
     background-color: #d0ceba;
 }
 #pageWrap.dark{
-    background-color: #151365dd;
+    background-color: #162b51;
 }
 /*Background Styles and Animations*/
 a{
@@ -194,8 +203,11 @@ body{
     font-size:1.25em;
 }
 body.dark{
-    background: linear-gradient(to bottom, #04142A, #0F1F3D);
     color:white;
+    background-image: url('imgs/BG-stars.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .cloud{
     position:absolute;
