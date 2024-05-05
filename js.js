@@ -23,7 +23,7 @@ function toggleDarkMode(){
     
     //loop through all listed tags and add dark class to each element
     let tagNames = ['body','div', 'nav', 'article', 'p', 'aside',
-    'ul', 'li', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'figure',
+    'ul', 'li', 'h1', 'h2', 'h3', 'figure',
     'figcaption', 'section', 'hr', 'a'];
     function addDarkClassByTagNames(tagNames) {
         tagNames.forEach(tagName => {
