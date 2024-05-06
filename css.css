@@ -197,14 +197,17 @@ hr.dark{
 }
 body{
     height:100%;
-    background: linear-gradient(to bottom, #b8ddf4, #92c9f0);
+    background-image: url('imgs/BG-sky-compressed.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     position: relative;
     font-family: monospace;
     font-size:1.25em;
 }
 body.dark{
     color:white;
-    background-image: url('imgs/BG-stars.jpg');
+    background-image: url('imgs/BG-stars-compressed.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
