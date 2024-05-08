@@ -195,10 +195,10 @@ hr{
 hr.dark{
     background-color: white;
 }
+
 body{
     height:100%;
-    background-color: lightskyblue;
-    background-image: url('imgs/BG-sky-compressed.jpg');
+    background: url('imgs/BG-sky-compressed.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -208,11 +208,7 @@ body{
 }
 body.dark{
     color:white;
-    background-color:#0F1F3D;
-    background-image: url('imgs/BG-stars-compressed.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: linear-gradient(to bottom, #04142A, #0F1F3D);
 }
 .cloud{
     position:absolute;
