@@ -127,6 +127,14 @@
     flex-wrap:wrap;
     flex:20%;
 }
+.gitUIContainer{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:auto;
+    padding:5px;
+}
 #resume {
     display:flex;
     flex-wrap: wrap;

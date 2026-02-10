@@ -16,20 +16,21 @@ I wanted to showcase how semantic HTML and basic CSS can be beautiful. My day-to
 ## Power Automate Desktop
 ### Stellantis Order Guide Scraper
 <video controls>
-  <source src="/videos/stellantisOGscrape.mp4" type="video/mp4">
+  <source src="./videos/stellantisOGscrape.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
 ### Ford Order Guide Scraper
 <video controls>
-  <source src="/videos/fordOGscrape.mp4" type="video/mp4">
+  <source src="./videos/fordOGscrape.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
 ## WIP - Currently Working on
 - [ ] Add content to readme
-- [ ] Redo language selection
+- [ ] Redo language selection flags
 - [ ] Redo darkmode background
+- [ ] Add shadows 
 
 
  

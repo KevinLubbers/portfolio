@@ -8,15 +8,22 @@ checkDarkMode();
 function toggleDarkMode(){
     let icon = document.getElementById("navUIDark");
     let translate = document.getElementById("navUIMenu");
+    let git_icon = document.getElementsByClassName("gitUI");
 
     if(darkMode){
         icon.src = "imgs/sun.png";
         translate.src = "imgs/translate-day.png";
+        for (let i = 0; i < git_icon.length; i++) {
+            git_icon[i].src = "imgs/github_day.svg";
+        }
         darkMode = false;
         localStorage.setItem("darkMode", darkMode);
     }else{
         icon.src = "imgs/moon.png";
         translate.src = "imgs/translate-night.png";
+        for (let i = 0; i < git_icon.length; i++) {
+            git_icon[i].src = "imgs/github_night.svg";
+        }
         darkMode = true;
         localStorage.setItem("darkMode", darkMode);
     }
