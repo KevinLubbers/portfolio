@@ -45,14 +45,16 @@
     min-width: 150px;
     z-index: 2;
     cursor: pointer;
-    text-align: left;
     border:1px solid black;
     
 }
-#dropdownContent div{
-    padding-left:.5em;
-    padding-top:.5em;
-    padding-bottom:.5em;
+.dropdown-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:15px;
+    padding-right:15px;
 }
 
 #dropdownContent.dark{
@@ -199,9 +201,11 @@ hr{
     height:1px;
     border:none;
     background-color: #417B5A;
+    box-shadow: 1px 2px 2px #888888;
 }
 hr.dark{
     background-color: white;
+    box-shadow: 1px 3px 3px #888888;
 }
 
 body{
