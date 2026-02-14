@@ -139,6 +139,11 @@ section{
     aspect-ratio: 1/1;
     width:65%;
 }
+img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
 .projectWrap{
     display:flex;
     flex-wrap:wrap;
