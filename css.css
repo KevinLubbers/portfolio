@@ -7,6 +7,7 @@
     max-width:1280px;
     border-radius:6px;
     overflow:hidden;
+    opacity: .8;
     background-color: #d0ceba;
 }
 section{
@@ -121,6 +122,7 @@ section{
     flex-wrap:wrap;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: flex-start;
 }
 .projectPreview{
     height:250px;
@@ -146,15 +148,23 @@ img {
 }
 .projectWrap{
     display:flex;
+    flex-direction: column;
     flex-wrap:wrap;
     flex:20%;
+    justify-content: space-between;
+    height:100%;
+}
+figcaption{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: flex-end;
+
 }
 .gitUIContainer{
     display:flex;
     flex-wrap:wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin:auto;
+    margin-top:auto;
     padding:5px;
 }
 #resume {
@@ -241,8 +251,26 @@ body.dark{
     height:2px;
     background-color:white;
     border-radius:50%;
-    z-index: 3;
+    z-index: -1;
+    animation: twinkle 1.5s infinite alternate; 
 }
+
+@keyframes twinkle {
+    0% {
+        opacity: 0.4;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2); /* Slightly increase size for effect */
+    }
+    100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+}
+
+
 .star.hide{
     display:none;
 }

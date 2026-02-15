@@ -17,8 +17,18 @@ function createStars(numStars) {
                 
                 body.appendChild(star);
             }
-        }
-createStars(200);
+}
+function randomizeTwinkle() {
+    const stars = document.querySelectorAll('.star');
+    stars.forEach(star => {
+        const randomDuration = (Math.random() * 2 + 1).toFixed(2); // Random duration between 1s and 3s (with two decimals)
+        const randomDelay = (Math.random() * 3).toFixed(2); // Random delay between 0s and 3s (with two decimals)
+
+        // Apply the randomized values to the stars
+        star.style.animationDuration = `${randomDuration}s`;
+        star.style.animationDelay = `${randomDelay}s`;
+    });
+}
 function checkDarkMode(){
     if(localStorage.getItem("darkMode") == "true"){
         toggleDarkMode();
@@ -43,6 +53,8 @@ function toggleDarkMode(){
         darkMode = false;
         localStorage.setItem("darkMode", darkMode);
     }else{
+        createStars(300);
+        randomizeTwinkle();
         icon.src = "imgs/moon.png";
         translate.src = "imgs/translate-night.png";
         for (let i = 0; i < git_icon.length; i++) {
@@ -69,22 +81,33 @@ function toggleDarkMode(){
     }
     addDarkClassByTagNames(tagNames);
 }
-    let icon = document.getElementById("navUIMenu");
-    let dropdown = document.getElementById("dropdownContent");
-    icon.addEventListener("click", function(event){
+    
+let icon = document.getElementById("navUIMenu");
+let dropdown = document.getElementById("dropdownContent");
+
+icon.addEventListener("click", function(event){
+    event.stopPropagation();
+
+    if (dropdown.style.display === "flex") {
+        dropdown.style.display = "none"; 
+    } else {
         let calc = icon.getBoundingClientRect();
         dropdown.style.display = "flex";
         dropdown.style.top = calc.bottom + "px";
         dropdown.style.left = calc.left + "px";
         dropdown.style.width = calc.width + "px";
+    }
+});
 
-        event.preventDefault();
-        event.stopPropagation();
+document.addEventListener("click", function(event) {
+    if (!icon.contains(event.target) && !dropdown.contains(event.target)) {
+        dropdown.style.display = "none";
+    }
+});
 
-        dropdown.addEventListener("mouseleave", function(event){
-            dropdown.style.display = "none";
-        });
-    });
+dropdown.addEventListener("mouseleave", function() {
+    dropdown.style.display = "none";
+});
 
 
 
