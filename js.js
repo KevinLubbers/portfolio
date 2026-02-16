@@ -93,8 +93,8 @@ icon.addEventListener("click", function(event){
     } else {
         let calc = icon.getBoundingClientRect();
         dropdown.style.display = "flex";
-        dropdown.style.top = calc.bottom + "px";
-        dropdown.style.left = calc.left + "px";
+        dropdown.style.top = (calc.bottom + 21) + "px";
+        dropdown.style.left= (calc.left - 105) +"px";
         dropdown.style.width = calc.width + "px";
     }
 });
@@ -105,9 +105,6 @@ document.addEventListener("click", function(event) {
     }
 });
 
-dropdown.addEventListener("mouseleave", function() {
-    dropdown.style.display = "none";
-});
 
 
 
