@@ -1,34 +1,39 @@
-var darkMode = false;
+const windowWidth = window.innerWidth;
+const windowHeight = window.innerHeight;
+const sizeForStars = Math.round(windowWidth * windowHeight * 0.00025);
 function createStars(numStars) {
-            const body = document.body;
-            for (let i = 0; i < numStars; i++) {
-                const star = document.createElement('div');
-                star.classList.add('star');
+    const body = document.body;
+    for (let i = 0; i < numStars; i++) {
+        const star = document.createElement('div');
+        star.classList.add('star');
+        star.classList.add("hide");
 
-                const top = Math.random() * 100; 
-                const left = Math.random() * 100; 
-                
-                star.style.top = `${top}%`;
-                star.style.left = `${left}%`;
-                
-                const size = Math.random() * 3 + 1; 
-                star.style.width = `${size}px`;
-                star.style.height = `${size}px`;
-                
-                body.appendChild(star);
-            }
+        const top = Math.random() * 100; 
+        const left = Math.random() * 100; 
+        
+        star.style.top = `${top}%`;
+        star.style.left = `${left}%`;
+        
+        const size = Math.random() * 3 + 1; 
+        star.style.width = `${size}px`;
+        star.style.height = `${size}px`;
+        
+        body.appendChild(star);
+    }
 }
 function randomizeTwinkle() {
     const stars = document.querySelectorAll('.star');
     stars.forEach(star => {
-        const randomDuration = (Math.random() * 2 + 1).toFixed(2); // Random duration between 1s and 3s (with two decimals)
-        const randomDelay = (Math.random() * 3).toFixed(2); // Random delay between 0s and 3s (with two decimals)
-
-        // Apply the randomized values to the stars
+        const randomDuration = (Math.random() * 2 + 3).toFixed(2);
+        const randomDelay = (Math.random() * 3).toFixed(2); 
         star.style.animationDuration = `${randomDuration}s`;
         star.style.animationDelay = `${randomDelay}s`;
     });
 }
+createStars(sizeForStars);
+randomizeTwinkle();
+
+let darkMode = false;
 function checkDarkMode(){
     if(localStorage.getItem("darkMode") == "true"){
         toggleDarkMode();
@@ -41,6 +46,9 @@ function toggleDarkMode(){
     let git_icon = document.getElementsByClassName("gitUI");
     let stars = document.getElementsByClassName("star");
 
+    icon.classList.remove('icon-animate');
+    void icon.offsetWidth;
+    icon.classList.add('icon-animate');
     if(darkMode){
         icon.src = "imgs/sun.png";
         translate.src = "imgs/translate-day.png";
@@ -53,8 +61,6 @@ function toggleDarkMode(){
         darkMode = false;
         localStorage.setItem("darkMode", darkMode);
     }else{
-        createStars(300);
-        randomizeTwinkle();
         icon.src = "imgs/moon.png";
         translate.src = "imgs/translate-night.png";
         for (let i = 0; i < git_icon.length; i++) {
@@ -87,10 +93,14 @@ let dropdown = document.getElementById("dropdownContent");
 
 icon.addEventListener("click", function(event){
     event.stopPropagation();
+    icon.classList.remove('icon-animate');
+    void icon.offsetWidth;
+    icon.classList.add('icon-animate');
 
     if (dropdown.style.display === "flex") {
         dropdown.style.display = "none"; 
     } else {
+        //positions dropdown relative to icon - lined up with header bottom
         let calc = icon.getBoundingClientRect();
         dropdown.style.display = "flex";
         dropdown.style.top = (calc.bottom + 21) + "px";
@@ -99,6 +109,7 @@ icon.addEventListener("click", function(event){
     }
 });
 
+//close dropdown if user clicks outside menu or on icon
 document.addEventListener("click", function(event) {
     if (!icon.contains(event.target) && !dropdown.contains(event.target)) {
         dropdown.style.display = "none";
