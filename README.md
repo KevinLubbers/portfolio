@@ -48,7 +48,13 @@ Steps:
 Time Saved: 45 minutes per day / every day  
 Eliminated Risk of Delay - Automation runs same time every day
 
-### PCS RPA Library
+### Stellantis PDF Extractor
+Extracts unstructured pricing data from OEM Order Guides and stores data into structured(Database) and semi-structured(JSON) format
+Key Points:
+1. Extracts data using PyMuPDF library and RegEx
+2. Transforms raw data into something that can be used
+3. Comparison functionality that shows removed options, added options, and changed options
+4. After the Data is cleaned, it is ready to be loaded into the Database
 
 ## Power Automate Desktop
 ### Stellantis Order Guide Scraper
@@ -81,9 +87,9 @@ Time Saved: 30 minutes per day / every day
 Eliminated risk of human error
 
 ## WIP - Currently Working on
-- [ ] Add content to readme
+- [x] Add content to readme
 - [x] Redo language selection flags
-- [ ] Redo darkmode background
+- [x] Redo darkmode background
 - [ ] Add shadows 
 
 

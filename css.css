@@ -27,8 +27,7 @@ section{
     box-shadow: 1px 5px 5px #888888;
     z-index:2;
     opacity:1;
-    position:sticky;
-    top:0;
+    position:relative;
 }
 #nav.dark{
     background-color: hsla(229, 70%, 21%, 0.993);
@@ -195,6 +194,12 @@ a{
 }
 a.dark{
     color:white;
+}
+p {
+    font-size: 1.07em;
+}
+li {
+    font-size: 1.07em;
 }
 hr{
     height:1px;
