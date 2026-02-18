@@ -256,22 +256,20 @@ body.dark{
     color:white;
     background: linear-gradient(to bottom, #01060c, #0b162c); 
 }
-.cloud{
-    position:absolute;
-    width: 300px;
-    height: auto;
+.cloud {
+  position: absolute;
+  bottom: 20%;  /* Position from the bottom of the screen */
+  width: 150px;  /* Cloud image width */
+  height: auto;  /* Maintain aspect ratio of cloud image */
+  animation: moveCloud 20s linear infinite;
 }
-.cloud1 {
-    top:2%;
-    left:1%;
-}
-.cloud2 {
-    top:100%;
-    right:100%;
-}
-.cloud3 {
-    top:64%;
-    left:100%;
+@keyframes moveCloud {
+  0% {
+    left: 100%;  /* Start off-screen on the right */
+  }
+  100% {
+    left: -150px;  /* End off-screen on the left */
+  }
 }
 .star{
     position:absolute;
