@@ -8,6 +8,7 @@
     border-radius:6px;
     overflow:hidden;
     background-color: #d0ceba;
+    opacity: .8;
 }
 section{
     min-height:20vh;
@@ -243,6 +244,7 @@ h1{
 }
 body{
     height:100%;
+    min-height: 100vh;
    /* background: url('imgs/BG-sky-compressed.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -258,10 +260,14 @@ body.dark{
 }
 .cloud {
   position: absolute;
-  bottom: 20%;  /* Position from the bottom of the screen */
-  width: 150px;  /* Cloud image width */
+  bottom: 30px;  
+  width: 100px;  /* Cloud image width */
   height: auto;  /* Maintain aspect ratio of cloud image */
-  animation: moveCloud 20s linear infinite;
+  background-image: url(imgs/cloud_pixel_art.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: moveCloud 35s linear infinite;
+  z-index: -1;
 }
 @keyframes moveCloud {
   0% {
@@ -296,7 +302,9 @@ body.dark{
     }
 }
 
-
+.cloud.hide{
+    display:none;
+}
 .star.hide{
     display:none;
 }

@@ -1,6 +1,20 @@
 const windowWidth = window.innerWidth;
 const windowHeight = window.innerHeight;
 const sizeForStars = Math.round(windowWidth * windowHeight * 0.00025);
+function createClouds() {
+    const body = document.body;
+    const numClouds = 20;
+    for (let i = 0; i < numClouds; i++) {
+        const cloud = document.createElement('div');
+        cloud.classList.add('cloud');
+        cloud.style.top = `${Math.random() * 100}%`;
+        cloud.style.left = `${Math.random() * 100 + 100}%`;
+        cloud.style.animationDuration = `${15 + Math.random() * 15}s`;
+        cloud.style.animationDelay = `${Math.random() * 20}s`;
+        body.appendChild(cloud);
+    }
+}
+createClouds();
 function createStars(numStars) {
     const body = document.body;
     for (let i = 0; i < numStars; i++) {
@@ -45,6 +59,7 @@ function toggleDarkMode(){
     let translate = document.getElementById("navUIMenu");
     let git_icon = document.getElementsByClassName("gitUI");
     let stars = document.getElementsByClassName("star");
+    let clouds = document.getElementsByClassName("cloud");
 
     icon.classList.remove('icon-animate');
     void icon.offsetWidth;
@@ -58,6 +73,9 @@ function toggleDarkMode(){
         for (let i = 0; i < stars.length; i++) {
             stars[i].classList.add("hide");
         }
+        for (let i = 0; i < clouds.length; i++) {
+            clouds[i].classList.remove("hide");
+        }
         darkMode = false;
         localStorage.setItem("darkMode", darkMode);
     }else{
@@ -68,6 +86,9 @@ function toggleDarkMode(){
         }
         for (let i = 0; i < stars.length; i++) {
             stars[i].classList.remove("hide");
+        }
+        for (let i = 0; i < clouds.length; i++) {
+            clouds[i].classList.add("hide");
         }
         darkMode = true;
         localStorage.setItem("darkMode", darkMode);
