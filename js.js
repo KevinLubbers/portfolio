@@ -8,7 +8,7 @@ function createClouds() {
         const cloud = document.createElement('div');
         cloud.classList.add('cloud');
         cloud.style.top = `${Math.random() * 100}%`;
-        cloud.style.left = `${Math.random() * 100 + 100}%`;
+        cloud.style.left = '-30%';
         cloud.style.animationDuration = `${15 + Math.random() * 15}s`;
         cloud.style.animationDelay = `${Math.random() * 20}s`;
         body.appendChild(cloud);

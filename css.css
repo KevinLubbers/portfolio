@@ -260,6 +260,7 @@ body.dark{
 }
 .cloud {
   position: absolute;
+  overflow:hidden;
   bottom: 30px;  
   width: 100px;  /* Cloud image width */
   height: auto;  /* Maintain aspect ratio of cloud image */
@@ -271,10 +272,18 @@ body.dark{
 }
 @keyframes moveCloud {
   0% {
-    left: 100%;  /* Start off-screen on the right */
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
   }
   100% {
-    left: -150px;  /* End off-screen on the left */
+    left: -5%;  /* End off-screen on the left */
+    opacity: 0;
   }
 }
 .star{
