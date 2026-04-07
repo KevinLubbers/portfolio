@@ -1,1 +1,21 @@
-this is a test resume
+Kevin Lubbers - Full Stack Software Engineer
+
+Education
+Farmingdale State College – Graduated: 2017
+B.S. - Computer Programming and Information Systems 
+Awards: magna cum laude, Dean's List (GPA: 3.84)
+
+Employment
+Military Auto Source, Remote : 2023 - Present
+Software Engineer
+
+Details
+
+Military Auto Source, Woodbury NY : 2020-2023
+Senior Data Engineer
+
+Created, monitored, and maintained automated Quality Control reports by leveraging SQL and knowledge of our database schema
+Led the normalization and optimization improvements on our databases by removing fields containing redundant data and calculated values, indexing frequently queried fields, and creating standardized operating procedures to guide team members in minimizing their own database footprint 
+Scrubbed and formatted data for parsing and automated input
+Mentored junior team members on best practices in data management, SQL query optimization, and database design principles
+Spearheaded data quality initiatives by conducting root cause analysis and implementing solutions to address inconsistencies in the data

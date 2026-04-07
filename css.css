@@ -156,11 +156,12 @@ section{
 }
 
 
-#projects{
+.projects{
     display:flex;
     flex-wrap:wrap;
     flex-direction: row;
     justify-content: center;
+    margin-bottom:25px;
 }
 .projectPreview{
     height:250px;
@@ -188,7 +189,7 @@ img {
     display:flex;
     flex-direction: column;
     flex-wrap:wrap;
-    flex:20%;
+    flex-basis:35%;
     align-items: center;
 }
 figcaption{
@@ -267,23 +268,34 @@ body.dark{
   background-image: url(imgs/cloud_pixel_art.png);
   background-size: contain;
   background-repeat: no-repeat;
-  animation: moveCloud 35s linear infinite;
+  animation: moveCloud 120s linear infinite;
   z-index: -1;
+  opacity: 0;
 }
 @keyframes moveCloud {
   0% {
-    transform: translateX(100vw);
-    opacity: 0;
+    /* transform: translate(0vw); */
+    left:0vw;
+    opacity: .6;
   }
-  10% {
+  4%{
+    opacity: .8;
+  }
+  6%{
+    opacity: .9;
+  }
+  10%{
     opacity: 1;
   }
-  95% {
+  50%{
+    /*transform: translate(80vw);*/
+    transform: translateX(calc(100vw - 115%));
     opacity: 1;
   }
   100% {
-    left: -5%;  /* End off-screen on the left */
-    opacity: 0;
+    /*transform: translate(0vw);*/
+    left:0vw;
+    opacity: 1;
   }
 }
 .star{

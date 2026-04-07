@@ -3,14 +3,15 @@ const windowHeight = window.innerHeight;
 const sizeForStars = Math.round(windowWidth * windowHeight * 0.00025);
 function createClouds() {
     const body = document.body;
-    const numClouds = 20;
+    const numClouds = 35;
     for (let i = 0; i < numClouds; i++) {
         const cloud = document.createElement('div');
         cloud.classList.add('cloud');
-        cloud.style.top = `${Math.random() * 100}%`;
-        cloud.style.left = '-30%';
-        cloud.style.animationDuration = `${15 + Math.random() * 15}s`;
-        cloud.style.animationDelay = `${Math.random() * 20}s`;
+        cloud.style.top = `${Math.random() * 95}%`;
+        cloud.style.animationDelay = `${Math.random() * 75}s`;
+        const scale = 0.5 + Math.random() * 0.7; 
+        cloud.style.width = `${150 * scale}px`;
+        cloud.style.height = `${80 * scale}px`;
         body.appendChild(cloud);
     }
 }

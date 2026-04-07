@@ -69,18 +69,19 @@
                     <div class="skillCol" id="middleCol">
                         <ul>
                             <li>JavaScript</li>
+                            <li>Progressive Web Apps</li>
+                            <li>Single Page Applications</li>
                             <li>HTML 5</li>
                             <li>CSS 3</li>
                             <li>Web Accessibility</li>
-                            <li>Progressive Web Apps</li>
                         </ul>
                     </div>
                     <div class="skillCol" id="rightCol">
                         <ul>
-                            <li>GitHub / GitLab / Bitbucket</li>
-                            <li>Git</li>
                             <li>Python</li>
+                            <li>Git</li>
                             <li>Docker</li>
+                            <li>GitHub / Gitea</li>
                             <li>Power Automate</li>
                         </ul>
                     </div>
@@ -90,18 +91,20 @@
 
             <hr>
             <section style="margin-left:25px; margin-right: 25px;">
-                <h2>Projects:</h2>
-                <div id="projects">
-                    
+                <h2>Web Dev Projects:</h2>
+                <div class="projects">
                     <figure class="projectWrap">
-                        <div class="projectPreview">
-                            <img src="imgs/PCSLogo.jpg" alt="PCS Department Logo" >
-                        </div>
+                        <a href="https://pcsgroup.info">
+                            <div class="projectPreview">
+                                <img src="imgs/PCSLogo.jpg" alt="PCS Department Logo" >
+                            </div>
+                        </a>
                         <figcaption>
                             <h3>PCS Ticket System</h3>
-                            <p>Ticket System where specialists are assigned the ticket based off of Task and Vehicle Selection</p>
+                            <p>Ticket System where specialists are assigned a ticket based off of Task and Vehicle Selection</p>
                             <p>An email is sent to the user and assigned specialist on form submission</p>
                             <p>Built with Laravel, Tailwind CSS, Livewire, and AlpineJS</p>
+                            <p>Visit the live site <a style="text-decoration:underline;" href="https://pcsgroup.info">here</a></p>
                         </figcaption>
                         <div class="gitUIContainer">
                             <a href="https://github.com/KevinLubbers/laravel-pcs"><img src="imgs/github_day.svg" style="height:45px; width:45px" class="gitUI" alt="GitHub Logo" ></a> 
@@ -115,13 +118,18 @@
                         <figcaption>
                             <h3>RecipeHub</h3>
                             <p>Free cloud based recipe storage and sharing platform</p>
+                            <p>Users can browse public recipes or show off their own. Share recipes with the click of a button</p>
                             <p>Built with Laravel, Laravel Breeze, and Bootstrap</p>
+                            <p>Visit the live site <a style="text-decoration:underline;" href="https://kl-ny.com">here</a></p>
                         </figcaption>
                         <div class="gitUIContainer">
                             <a href="https://github.com/KevinLubbers/RecipeHub"><img src="imgs/github_day.svg" style="height:45px; width:45px" class="gitUI" alt="GitHub Logo" ></a> 
                         </div>
                     </figure>
+                </div>
 
+                <h2>DevOps / SysAdmin Projects:</h2>
+                <div class="projects">
                     <figure class="projectWrap">
                         <div class="projectPreview">
                             <img src="imgs/python-logo.svg" alt="Python Programming Language Logo" >
@@ -138,7 +146,41 @@
 
                     <figure class="projectWrap">
                         <div class="projectPreview">
-                            <img src="imgs/python-logo.svg" alt="Python Programming Language Logo" >
+                            <img src="imgs/bash.svg" alt="Python Programming Language Logo" >
+                        </div>
+                        <figcaption>
+                            <h3>Shared Hosting Laravel Setup</h3>
+                            <p>Skeleton template for setting up a Laravel project in a shared hosting environment</p>
+                            <p>Also includes bash scripts for setting up automated deployment integration with GitHub, logging and cache clearing included</p>
+                            <p>Proper .htaccess is included for URL rewriting, authorization headers, trailing slashes, block access to .env and .git files, and pointing to index.php outside of laravel project</p>
+                        </figcaption>
+                        <div class="gitUIContainer">
+                            <a href="https://github.com/KevinLubbers/laravel-shared-hosting-setup"><img src="imgs/github_day.svg" style="height:45px; width:45px" class="gitUI" alt="GitHub Logo" ></a> 
+                        </div>
+                    </figure>
+
+                </div>
+
+                <h2>Data Pipelines / Web Scraping Projects:</h2>
+                <div class="projects">
+                    <figure class="projectWrap">
+                        <div class="projectPreview">
+                            <img src="imgs/playwright.svg" alt="Python Programming Language Logo" >
+                        </div>
+                        <figcaption>
+                            <h3>PC Carbook Scraper</h3>
+                            <p>Logs in to a website, manipulates elements on the page to display tables of data, scrapes the pertinent content and stores it into an SQLite database</p>
+                            <p>Uses SQL queries to track changes and send users a Teams notification when new data is present</p>
+                            <p>Built with Python using libraries like playwright, sqlite3, dotenv, and the standard library</p>
+                        </figcaption>
+                        <div class="gitUIContainer">
+                            <a href="https://github.com/KevinLubbers/pc-carbook-playwright"><img src="imgs/github_day.svg" style="height:45px; width:45px" class="gitUI" alt="GitHub Logo" ></a> 
+                        </div>
+                    </figure>
+
+                    <figure class="projectWrap">
+                        <div class="projectPreview">
+                            <img src="imgs/pymupdf.svg" alt="Python Programming Language Logo" >
                         </div>
                         <figcaption>
                             <h3>Stellantis PDF Extractor</h3>
@@ -146,7 +188,22 @@
                             <p>Built with Python using libraries like pandas, pymupdf, deepdiff, and the standard library</p>
                         </figcaption>
                         <div class="gitUIContainer">
-                            <a href=""><img src="imgs/github_day.svg" style="height:45px; width:45px" class="gitUI" alt="GitHub Logo" ></a> 
+                            <a href="https://github.com/KevinLubbers/stellantis_PDF_extractor"><img src="imgs/github_day.svg" style="height:45px; width:45px" class="gitUI" alt="GitHub Logo" ></a> 
+                        </div>
+                    </figure>
+                    
+                    <figure class="projectWrap">
+                        <div class="projectPreview">
+                            <img src="imgs/pad.svg" alt="BASH Logo" >
+                        </div>
+                        <figcaption>
+                            <h3>Dynamic Website Scraper</h3>
+                            <p>Logs in to a manufacturer's website, enters MFA code from email, manipulate elements on the page to trigger AJAX requests and scrapes the pertinent content by using JavaScript</p>
+                            <p>Collate the scraped content into a report and send to Microsoft Teams through an API request</p>
+                            <p>View the <a style="text-decoration:underline;" href="/videos/stellantisOGscrape.mp4">video</a></p>
+                        </figcaption>
+                        <div class="gitUIContainer">
+                            <a href="https://github.com/KevinLubbers/portfolio"><img src="imgs/github_day.svg" style="height:45px; width:45px" class="gitUI" alt="GitHub Logo" ></a> 
                         </div>
                     </figure>
 
@@ -155,43 +212,15 @@
                             <img src="imgs/pad.svg" alt="Power Automate Logo" >
                         </div>
                         <figcaption>
-                            <h3>Web Scraper #1</h3>
-                            <p>Logs in to a website, enters MFA code from email, manipulate elements on the page to trigger AJAX requests and scrapes the pertinent content by using JavaScript</p>
+                            <h3>Static Website Scraper</h3>
+                            <p>Logs in to a manufacturer's website, navigate to multiple pages, scrapes the pertinent content from each page's HTML code by using JavaScript</p>
                             <p>Collate the scraped content into a report and send to Microsoft Teams through an API request</p>
+                            <p>View the <a style="text-decoration:underline;" href="/videos/fordOGscrape.mp4">video</a></p>
                         </figcaption>
                         <div class="gitUIContainer">
                             <a href="https://github.com/KevinLubbers/portfolio"><img src="imgs/github_day.svg" style="height:45px; width:45px" class="gitUI" alt="GitHub Logo" ></a> 
                         </div>
                     </figure>
-
-                    <figure class="projectWrap">
-                        <div class="projectPreview">
-                            <img src="imgs/pad.svg" alt="Power Automate Logo" >
-                        </div>
-                        <figcaption>
-                            <h3>Web Scraper #2</h3>
-                            <p>Logs in to a website, navigate to multiple pages, scrapes the pertinent content from each page's HTML code by using JavaScript</p>
-                            <p>Collate the scraped content into a report and send to Microsoft Teams through an API request</p>
-                        </figcaption>
-                        <div class="gitUIContainer">
-                            <a href="https://github.com/KevinLubbers/portfolio"><img src="imgs/github_day.svg" style="height:45px; width:45px" class="gitUI" alt="GitHub Logo" ></a> 
-                        </div>
-                    </figure>
-                    <!--
-                    <figure class="projectWrap">
-                        <div class="projectPreview">
-                            <img src="imgs/pad.svg" alt="Power Automate Logo" >
-                        </div>
-                        <figcaption>
-                            <h3>This Website</h3>
-                            <p>The purpose of this project is to provide code, video, and written explanation for some of the projects I have worked on</p>
-                            <p>This website was built with HTML and CSS. That's it.</p> 
-                        </figcaption>
-                        <div class="gitUIContainer">
-                            <a href="https://github.com/KevinLubbers/portfolio"><img src="imgs/github_day.svg" style="height:45px; width:45px" class="gitUI" alt="GitHub Logo" ></a> 
-                        </div>
-                    </figure>
-                    -->
                 </div>
             </section>
 
