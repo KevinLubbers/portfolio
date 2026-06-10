@@ -8,7 +8,7 @@ I wanted to showcase how semantic HTML and basic CSS can be beautiful. My day-to
 
 
 
-## PHP / Laravel / Livewire
+## PHP / Laravel / Livewire (Web Dev)
 ### PCS Ticket System 2.0
 
 Email requests that lacked clear customer and vehicle information were causing unnecessary work and added stress for the PCS Department. This ticket system was created to solve their issues.
@@ -24,6 +24,11 @@ How it helps:
   - Showcase your same day response rate and resolution rate
 - Analytics also show trends that lead to questions that help push the business
   - "Why are so many people asking the same question about XYZ? Maybe there is an underlying cause..." 
+
+Visit the [PCS Ticket System](https://github.com/KevinLubbers/laravel-pcs)
+
+---  
+
 ### RecipeHub
 
 Everyone and their mother has their own recipes. I wanted a way for people to be able to store their recipes in the cloud for free! Similar concept to GitHub but instead of uploading code for the world to see, you would be uploading recipes.
@@ -34,7 +39,28 @@ You can save recipes you randomly find from other people.
 
 Sharing is a breeze too with our copy function! All Ingredients and Measurements are placed into your clipboard, ready to be pasted into a text message or email.
 
-## Python / Scripting
+Visit [RecipeHub](https://github.com/KevinLubbers/RecipeHub)
+
+---  
+
+### OcuCal
+
+My wife likes to keep track of everything related to her health. The only issue, everything was spread out between different apps and handwritten charts. She loves being able to see patterns and glean insights she might have missed otherwise but her system was not sustainable.
+
+She asked me to create a calendar where she can view the whole year at-a-glance and turn different filters off and on to see exactly what she wants when she wants, all in one app. Together we created a Progressive Web App named [**OcuCal**](https://https://github.com/KevinLubbers/athena-calendar-app). 
+
+---  
+
+### Laravel Shared Hosting Setup
+Shared hosting is the most cost effective way to host a website
+
+I've created a skeleton template and guide for setting up a Laravel project in a shared hosting environment
+
+Also includes bash scripts for setting up automated deployment integration with GitHub, logging and cache clearing included
+
+Visit [Here](https://github.com/KevinLubbers/laravel-shared-hosting-setup)
+
+## Python ETL Scripts
 ### Daily MilQuote Data Pull
 Updates meta-data then creates the .exe and .iso that is distributed and installed world-wide  
 Steps:  
@@ -47,6 +73,42 @@ Steps:
 7. When all files are sync'd (approx 5 min)  
 Time Saved: 45 minutes per day / every day  
 Eliminated Risk of Delay - Automation runs same time every day
+
+---  
+
+### PCS Library - RPA
+A RPA library for interacting with the WinForms Version of PCS Maintenance through keyboard-driven actions.
+
+Can be combined with other scripts that use scraped data or decompiled data from pdfs.
+
+Built with Python using the following libraries: pyautogui, pygetwindow, and pyperclip
+
+---  
+
+### PC Carbook - Base Price and Destination Scraper
+Logs in to a website, manipulates elements on the page to display tables of data, scrapes the pertinent content and stores it into an SQLite database
+
+Uses SQL queries to track changes and send users a Teams notification when new data is present
+
+Built with Python using libraries like playwright, sqlite3, dotenv, and the standard library
+
+---  
+
+### PC Carbook - Model Options Scraper
+Built from the previously mentioned Base Price and Destination Scraper, this script was created through an iterative design process. 
+
+Still looping through designated Manufacturers, but now we load all of the option data for each model present in the dynamically generated table.
+
+The database schema needed to change slightly to account for the introductions of option_code, option_name, and option_category 
+
+---  
+
+### PC Carbook to PCS
+Uses the previously mentioned pcslib Python library to loop through scraped data and enter it into the PCS Maintenance DB.
+
+CLI menu for keeping track of models entered into PCS Maintenance.
+
+---  
 
 ### Stellantis PDF Extractor
 Extracts unstructured pricing data from OEM Order Guides and stores data into structured(Database) and semi-structured(JSON) format
@@ -87,11 +149,12 @@ Time Saved: 30 minutes per day / every day
 Eliminated risk of human error
 
 ## WIP - Currently Working on
-- [x] Add content to readme
-- [x] Redo language selection flags
-- [x] Redo darkmode background
-- [ ] Add shadows 
-
+- [x] ~~Add content to readme~~
+- [x] ~~Redo language selection flags~~
+- [x] ~~Redo darkmode background~~
+- [ ] Update all projects on README
+- [ ] Update all projects on index.html
+- [ ] Get the videos working properly, currently have to download to watch
 
 
  
