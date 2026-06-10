@@ -152,8 +152,8 @@ Eliminated risk of human error
 - [x] ~~Add content to readme~~
 - [x] ~~Redo language selection flags~~
 - [x] ~~Redo darkmode background~~
-- [ ] Update all projects on README
-- [ ] Update all projects on index.html
+- [x] Update all projects on README
+- [x] Update all projects on index.html
 - [ ] Get the videos working properly, currently have to download to watch
 
 
