@@ -7,15 +7,15 @@ Awards: magna cum laude, Dean's List (GPA: 3.84)
 
 Employment
 Military Auto Source, Remote : 2023 - Present
-Software Engineer
+Senior Data Engineer
+Details:
+Designed and maintained ETL pipelines that transformed and loaded operational data into company databases, ensuring reliable and accurate downstream reporting
+Mentored junior team members on best practices in data management, SQL query optimization, and database architecture / design principles
 
-Details
 
 Military Auto Source, Woodbury NY : 2020-2023
-Senior Data Engineer
-
-Created, monitored, and maintained automated Quality Control reports by leveraging SQL and knowledge of our database schema
-Led the normalization and optimization improvements on our databases by removing fields containing redundant data and calculated values, indexing frequently queried fields, and creating standardized operating procedures to guide team members in minimizing their own database footprint 
-Scrubbed and formatted data for parsing and automated input
-Mentored junior team members on best practices in data management, SQL query optimization, and database design principles
+Data Engineer
+Details:
+Developed automated SQL-based quality control reporting that identified billing discrepancies and data anomalies, helping ensure accurate customer invoicing and reducing revenue leakage
+Improved database performance and maintainability through schema normalization, indexing strategies, and data model optimization, reducing redundant data, and increasing query efficiency
 Spearheaded data quality initiatives by conducting root cause analysis and implementing solutions to address inconsistencies in the data

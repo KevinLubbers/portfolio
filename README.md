@@ -10,7 +10,6 @@ I wanted to showcase how semantic HTML and basic CSS can be beautiful. My day-to
 
 ## PHP / Laravel / Livewire (Web Dev)
 ### PCS Ticket System 2.0
-
 Email requests that lacked clear customer and vehicle information were causing unnecessary work and added stress for the PCS Department. This ticket system was created to solve their issues.
 
 How it helps:
@@ -29,8 +28,14 @@ Visit the [PCS Ticket System](https://github.com/KevinLubbers/laravel-pcs)
 
 ---  
 
-### RecipeHub
+### OcuCal
+My wife likes to keep track of everything related to her health. The only issue, everything was spread out between different apps and handwritten charts. She loves being able to see patterns and glean insights she might have missed otherwise but her system was not sustainable.
 
+She asked me to create a calendar where she can view the whole year at-a-glance and turn different filters off and on to see exactly what she wants when she wants, all in one app. Together we created a Progressive Web App named [**OcuCal**](https://https://github.com/KevinLubbers/athena-calendar-app). 
+
+---  
+
+### RecipeHub
 Everyone and their mother has their own recipes. I wanted a way for people to be able to store their recipes in the cloud for free! Similar concept to GitHub but instead of uploading code for the world to see, you would be uploading recipes.
 
 Adjust the recipe for your family size with the built in multiplication function. Now, families of all sizes can enjoy every dish on the web.
@@ -40,14 +45,6 @@ You can save recipes you randomly find from other people.
 Sharing is a breeze too with our copy function! All Ingredients and Measurements are placed into your clipboard, ready to be pasted into a text message or email.
 
 Visit [RecipeHub](https://github.com/KevinLubbers/RecipeHub)
-
----  
-
-### OcuCal
-
-My wife likes to keep track of everything related to her health. The only issue, everything was spread out between different apps and handwritten charts. She loves being able to see patterns and glean insights she might have missed otherwise but her system was not sustainable.
-
-She asked me to create a calendar where she can view the whole year at-a-glance and turn different filters off and on to see exactly what she wants when she wants, all in one app. Together we created a Progressive Web App named [**OcuCal**](https://https://github.com/KevinLubbers/athena-calendar-app). 
 
 ---  
 
@@ -152,8 +149,9 @@ Eliminated risk of human error
 - [x] ~~Add content to readme~~
 - [x] ~~Redo language selection flags~~
 - [x] ~~Redo darkmode background~~
-- [x] Update all projects on README
-- [x] Update all projects on index.html
+- [x] ~~Update all projects on README~~
+- [x] ~~Update all projects on index.html~~
+- [ ] Edit and proof
 - [ ] Get the videos working properly, currently have to download to watch
 
 
